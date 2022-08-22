@@ -12,7 +12,7 @@ sniffio==1.2.0
 starlette==0.19.1
 typing_extensions==4.3.0
 UzMorphAnalyser==0.0.9
-uztagger==0.0.6
+uztagger==0.0.7
 UzTransliterator==0.0.33
 asgiref==3.5.2
 certifi==2022.5.18.1
