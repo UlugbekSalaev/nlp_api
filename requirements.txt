@@ -11,9 +11,9 @@ six==1.16.0
 sniffio==1.2.0
 starlette==0.19.1
 typing_extensions==4.3.0
-UzMorphAnalyser==0.0.9
-uztagger==0.0.7
-UzTransliterator==0.0.36
+UzMorphAnalyser
+uztagger
+UzTransliterator
 asgiref==3.5.2
 certifi==2022.5.18.1
 charset-normalizer==2.0.12
@@ -36,3 +36,4 @@ urllib3==1.26.9
 uvicorn==0.17.6
 watchgod==0.8.2
 websockets==10.3
+UzSyllable
