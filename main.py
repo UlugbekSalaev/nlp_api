@@ -4,8 +4,15 @@ from UzTransliterator import UzTransliterator
 from UzMorphAnalyser import UzMorphAnalyser
 from fastapi.middleware.cors import CORSMiddleware
 from UzSyllable import syllables, count, line_break
+from fastapi.responses import RedirectResponse
 
 app = FastAPI()
+
+
+@app.get("/")
+def root():
+    return RedirectResponse(url="/docs")
+
 
 # Configure CORS
 app.add_middleware(
@@ -59,6 +66,7 @@ async def postagging(text: str):
 @app.post("/syllables")
 async def stem(word: str):
     return syllables(word)
+
 
 @app.post("/count-syllables")
 async def stem(word: str):
